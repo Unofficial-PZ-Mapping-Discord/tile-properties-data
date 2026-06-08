@@ -170,7 +170,9 @@ objects:
 
       A second effect of this parameter can be triggered by setting [IsSurfaceOffset](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#issurfaceoffset) to `true`, which will instead make the Surface parameter indicate the bottom height of the tile, which is useful for object tiles which are placed on top of other tiles, such as flower pots or lamps.
 
-      The surface position of the tile when an object is on a tabletop surface like a counter or table. Requires [IsSurfaceOffset](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#issurfaceoffset) set to `true`.
+      When the tile can be placed on another tile surface but also has a surface itself, the [ItemHeight](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#itemheight) parameter can be used to indicate the height of the surface of the tile itself, and the Surface and IsSurfaceOffset parameters will then be used for the height of the bottom surface of the tile.
+
+      You can find a demonstration of these properties on the wiki [here](https://pzwiki.net/wiki/Tile_properties#Surface_and_ItemHeight)
     type:
       main: integer
     default: 0
