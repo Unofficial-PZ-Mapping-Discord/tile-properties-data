@@ -1,0 +1,987 @@
+{
+    "alwaysDraw": {
+        "field": "ALWAYS_DRAW"
+    },
+    "AmbientSound": {
+        "field": "AMBIENT_SOUND"
+    },
+    "attachedCeiling": {
+        "field": "ATTACHED_CEILING"
+    },
+    "attachedE": {
+        "field": "ATTACHED_E"
+    },
+    "AttachedFloor": {
+        "field": "ATTACHED_FLOOR"
+    },
+    "attachedN": {
+        "field": "ATTACHED_N"
+    },
+    "attachedNW": {
+        "field": "ATTACHED_NW"
+    },
+    "attachedS": {
+        "field": "ATTACHED_S"
+    },
+    "attachedSE": {
+        "field": "ATTACHED_SE"
+    },
+    "attachedSurface": {
+        "field": "ATTACHED_SURFACE"
+    },
+    "AttachedToGlass": {
+        "field": "ATTACHED_TO_GLASS"
+    },
+    "attachedW": {
+        "field": "ATTACHED_W"
+    },
+    "attachtostairs": {
+        "field": "ATTACH_TO_STAIRS"
+    },
+    "bed": {
+        "field": "BED"
+    },
+    "BedType": {
+        "field": "BED_TYPE"
+    },
+    "BlocksPlacement": {
+        "field": "BLOCKS_PLACEMENT",
+        "description": "If set to `true`, other tiles cannot occupy the same square as this tile.",
+        "type": {
+            "main": "boolean"
+        }
+    },
+    "BlockRain": {
+        "field": "BLOCK_RAIN"
+    },
+    "blocksight": {
+        "field": "BLOCK_SIGHT"
+    },
+    "blueprint": {
+        "field": "BLUEPRINT"
+    },
+    "burning": {
+        "field": "BURNING"
+    },
+    "burntOut": {
+        "field": "BURNT_OUT"
+    },
+    "BurntTile": {
+        "field": "BURNT_TILE"
+    },
+    "Bush": {
+        "field": "BUSH"
+    },
+    "CantClimb": {
+        "field": "CANT_CLIMB"
+    },
+    "CanAttachAnimal": {
+        "field": "CAN_ATTACH_ANIMAL"
+    },
+    "canBeCut": {
+        "field": "CAN_BE_CUT"
+    },
+    "canBeRemoved": {
+        "field": "CAN_BE_REMOVED"
+    },
+    "CanBreak": {
+        "field": "CAN_BREAK",
+        "#desc": "PickUpTool",
+        "type": {
+            "main": "boolean"
+        },
+        "description": "[PickUpTool](https://pz-wiki-modding.github.io/PZ-API-Docs/scripts/item.html#item-pickuptool) will indicate what tool the player needs to use to pick up the tile, while [PlaceTool](https://pz-wiki-modding.github.io/PZ-API-Docs/scripts/item.html#item-placetool) will indicate what tool the player needs to use to place the tile.\n\nIf you want to add new tools, you can usually use the [ItemTags](https://pz-wiki-modding.github.io/PZ-API-Docs/java/item_tags.html) that you add to your [item tools](https://pz-wiki-modding.github.io/PZ-API-Docs/scripts/item.html#tags), or you can also look into the lua file `media/Moveables/ISMoveableDefinitions.lua` to see how they add each new tools.\n\nThe [PickUpLevel](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#pickuplevel) is used to determine what level in the relevant skill you need to be able to pickup the tile. For example `Hammer` with a PickUpLevel of 2 will require a carpentry level of 2 to pickup the tile.\n\nThe [PickUpWeight](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#pickupweight) will determine how much the tile weights in the inventory. This value is divded by 10, so for example a weight of 200 will mean an in-game encumbrance of 20. If [ForceSingleItem](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#forcesingleitem) is set to `true`, this is the total weight, otherwise this is the weight of each tile as a separate item.\n\n[CanBreak](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#canbreak) can be used to indicate that the tile has a chance to break when being picked up. The chance gets smaller based on the [PickUpLevel](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#pickuplevel)."
+    },
+    "canPathN": {
+        "field": "CAN_PATH_N"
+    },
+    "canPathW": {
+        "field": "CAN_PATH_W"
+    },
+    "CanScrap": {
+        "field": "CAN_SCRAP"
+    },
+    "CarSlowFactor": {
+        "field": "CAR_SLOW_FACTOR"
+    },
+    "chairE": {
+        "field": "CHAIR_E"
+    },
+    "chairN": {
+        "field": "CHAIR_N"
+    },
+    "chairS": {
+        "field": "CHAIR_S"
+    },
+    "chairW": {
+        "field": "CHAIR_W"
+    },
+    "climbSheetE": {
+        "field": "CLIMB_SHEET_E"
+    },
+    "climbSheetN": {
+        "field": "CLIMB_SHEET_N"
+    },
+    "climbSheetS": {
+        "field": "CLIMB_SHEET_S"
+    },
+    "climbSheetTopE": {
+        "field": "CLIMB_SHEET_TOP_E"
+    },
+    "climbSheetTopN": {
+        "field": "CLIMB_SHEET_TOP_N"
+    },
+    "climbSheetTopS": {
+        "field": "CLIMB_SHEET_TOP_S"
+    },
+    "climbSheetTopW": {
+        "field": "CLIMB_SHEET_TOP_W"
+    },
+    "climbSheetW": {
+        "field": "CLIMB_SHEET_W"
+    },
+    "CloseSneakBonus": {
+        "field": "CLOSE_SNEAK_BONUS"
+    },
+    "collideN": {
+        "field": "COLLIDE_N"
+    },
+    "collideW": {
+        "field": "COLLIDE_W"
+    },
+    "connectX": {
+        "field": "CONNECT_X"
+    },
+    "connectY": {
+        "field": "CONNECT_Y"
+    },
+    "container": {
+        "field": "CONTAINER"
+    },
+    "ContainerCapacity": {
+        "field": "CONTAINER_CAPACITY"
+    },
+    "ContainerCloseSound": {
+        "field": "CONTAINER_CLOSE_SOUND"
+    },
+    "ContainerOpenSound": {
+        "field": "CONTAINER_OPEN_SOUND"
+    },
+    "ContainerPosition": {
+        "field": "CONTAINER_POSITION"
+    },
+    "ContainerPutSound": {
+        "field": "CONTAINER_PUT_SOUND"
+    },
+    "ContainerTakeSound": {
+        "field": "CONTAINER_TAKE_SOUND"
+    },
+    "CornerNorthWall": {
+        "field": "CORNER_NORTH_WALL"
+    },
+    "CornerWestWall": {
+        "field": "CORNER_WEST_WALL"
+    },
+    "curtainE": {
+        "field": "CURTAIN_E"
+    },
+    "curtainN": {
+        "field": "CURTAIN_N"
+    },
+    "CurtainOffset": {
+        "field": "CURTAIN_OFFSET"
+    },
+    "curtainS": {
+        "field": "CURTAIN_S"
+    },
+    "CurtainSound": {
+        "field": "CURTAIN_SOUND"
+    },
+    "curtainW": {
+        "field": "CURTAIN_W"
+    },
+    "CustomItem": {
+        "field": "CUSTOM_ITEM"
+    },
+    "CustomName": {
+        "field": "CUSTOM_NAME",
+        "description": "Used to define the item name, which will show as [GroupName](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#groupname) + [CustomName](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#customname). For example if CustomName is set to `Bed` and GroupName is set to `Fancy`, it will show as `Fancy Bed` in the game. `GroupName` is used as a sub-category description of the object, such as its color, shape, name or quality.\n\nThose properties need to be the same for multi-tile objects.",
+        "type": {
+            "main": "string"
+        }
+    },
+    "CutawayHint": {
+        "field": "CUTAWAY_HINT"
+    },
+    "cutN": {
+        "field": "CUT_N"
+    },
+    "cutW": {
+        "field": "CUT_W"
+    },
+    "DamagedSprite": {
+        "field": "DAMAGED_SPRITE"
+    },
+    "diamondFloor": {
+        "field": "DIAMOND_FLOOR"
+    },
+    "doorFrN": {
+        "field": "DOOR_FR_N"
+    },
+    "doorFrW": {
+        "field": "DOOR_FR_W"
+    },
+    "doorN": {
+        "field": "DOOR_N"
+    },
+    "DoorSound": {
+        "field": "DOOR_SOUND"
+    },
+    "doorTrans": {
+        "field": "DOOR_TRANS"
+    },
+    "doorW": {
+        "field": "DOOR_W"
+    },
+    "DoorWallN": {
+        "field": "DOOR_WALL_N"
+    },
+    "DoorWallNW": {
+        "field": "DOOR_WALL_NW"
+    },
+    "DoorWallNWTrans": {
+        "field": "DOOR_WALL_NW_TRANS"
+    },
+    "DoorWallNTrans": {
+        "field": "DOOR_WALL_N_TRANS"
+    },
+    "DoorWallW": {
+        "field": "DOOR_WALL_W"
+    },
+    "DoorWallWTrans": {
+        "field": "DOOR_WALL_W_TRANS"
+    },
+    "DoubleDoor": {
+        "field": "DOUBLE_DOOR"
+    },
+    "DoubleDoor1": {
+        "field": "DOUBLE_DOOR_1"
+    },
+    "DoubleDoor2": {
+        "field": "DOUBLE_DOOR_2"
+    },
+    "EntityScript": {
+        "field": "ENTITY_SCRIPT"
+    },
+    "EntityScriptName": {
+        "field": "ENTITY_SCRIPT_NAME"
+    },
+    "exterior": {
+        "field": "EXTERIOR"
+    },
+    "Eoffset": {
+        "field": "E_OFFSET"
+    },
+    "Facing": {
+        "field": "FACING",
+        "description": "The direction the object is facing. This is not the orientation, but the direction the objects front looks towards. If the value is `South`, it means the tile has a north orientation and thus would be facing south.\n\nYou can find an image which shows the directions of the game [here](https://pzwiki.net/wiki/Tile_properties#Directions).",
+        "values": [
+            "North",
+            "East",
+            "South",
+            "West"
+        ]
+    },
+    "FasciaEdge": {
+        "field": "FASCIA_EDGE"
+    },
+    "FasciaEdgeReversible": {
+        "field": "FASCIA_EDGE_REVERSIBLE"
+    },
+    "FenceTypeHigh": {
+        "field": "FENCE_TYPE_HIGH"
+    },
+    "FenceTypeLow": {
+        "field": "FENCE_TYPE_LOW"
+    },
+    "firerequirement": {
+        "field": "FIRE_REQUIREMENT"
+    },
+    "FloorAttachmentE": {
+        "field": "FLOOR_ATTACHMENT_E"
+    },
+    "FloorAttachmentN": {
+        "field": "FLOOR_ATTACHMENT_N"
+    },
+    "FloorAttachmentS": {
+        "field": "FLOOR_ATTACHMENT_S"
+    },
+    "FloorAttachmentW": {
+        "field": "FLOOR_ATTACHMENT_W"
+    },
+    "FloorHeight": {
+        "field": "FLOOR_HEIGHT"
+    },
+    "FloorHeightOneThird": {
+        "field": "FLOOR_HEIGHT_ONE_THIRD"
+    },
+    "FloorHeightTwoThirds": {
+        "field": "FLOOR_HEIGHT_TWO_THIRDS"
+    },
+    "FloorMaterial": {
+        "field": "FLOOR_MATERIAL"
+    },
+    "FloorOverlay": {
+        "field": "FLOOR_OVERLAY"
+    },
+    "FootstepMaterial": {
+        "field": "FOOTSTEP_MATERIAL"
+    },
+    "forcedLocked": {
+        "field": "FORCED_LOCKED"
+    },
+    "ForceAmbient": {
+        "field": "FORCE_AMBIENT"
+    },
+    "forceFade": {
+        "field": "FORCE_FADE"
+    },
+    "forceLocked": {
+        "field": "FORCE_LOCKED"
+    },
+    "forceRender": {
+        "field": "FORCE_RENDER"
+    },
+    "ForceSingleItem": {
+        "field": "FORCE_SINGLE_ITEM",
+        "description": "Forces the object to be a single item in inventory even when it is made up of multiple tiles."
+    },
+    "Freezer": {
+        "field": "FREEZER"
+    },
+    "FreezerCapacity": {
+        "field": "FREEZER_CAPACITY"
+    },
+    "FreezerPosition": {
+        "field": "FREEZER_POSITION"
+    },
+    "fuelAmount": {
+        "field": "FUEL_AMOUNT"
+    },
+    "GarageDoor": {
+        "field": "GARAGE_DOOR"
+    },
+    "GeneratorSound": {
+        "field": "GENERATOR_SOUND"
+    },
+    "GenericCraftingSurface": {
+        "field": "GENERIC_CRAFTING_SURFACE"
+    },
+    "GlassRemovedOffset": {
+        "field": "GLASS_REMOVED_OFFSET"
+    },
+    "grassFloor": {
+        "field": "GRASS_FLOOR"
+    },
+    "GrimeType": {
+        "field": "GRIME_TYPE"
+    },
+    "GroupName": {
+        "field": "GROUP_NAME",
+        "#desc": "CustomName",
+        "type": {
+            "main": "string"
+        },
+        "description": "Used to define the item name, which will show as [GroupName](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#groupname) + [CustomName](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#customname). For example if CustomName is set to `Bed` and GroupName is set to `Fancy`, it will show as `Fancy Bed` in the game. `GroupName` is used as a sub-category description of the object, such as its color, shape, name or quality.\n\nThose properties need to be the same for multi-tile objects."
+    },
+    "halfheight": {
+        "field": "HALF_HEIGHT"
+    },
+    "HasLightOnSprite": {
+        "field": "HAS_LIGHT_ON_SPRITE"
+    },
+    "HasRaindrop": {
+        "field": "HAS_RAINDROP"
+    },
+    "HasRainSplashes": {
+        "field": "HAS_RAIN_SPLASHES"
+    },
+    "hidewalls": {
+        "field": "HIDE_WALLS"
+    },
+    "HitByCar": {
+        "field": "HIT_BY_CAR"
+    },
+    "HoppableN": {
+        "field": "HOPPABLE_N"
+    },
+    "HoppableW": {
+        "field": "HOPPABLE_W"
+    },
+    "IgnoreSurfaceSnap": {
+        "field": "IGNORE_SURFACE_SNAP"
+    },
+    "interior": {
+        "field": "INTERIOR"
+    },
+    "InteriorSide": {
+        "field": "INTERIOR_SIDE"
+    },
+    "invisible": {
+        "field": "INVISIBLE"
+    },
+    "IsoType": {
+        "field": "ISO_TYPE",
+        "description": "Used to select the class the tile will be. IsoObject is the default but based on your choice there will different behaviors and interactions with the tile.",
+        "values": [
+            "IsoObject",
+            "IsoBarbecue",
+            "IsoBrokenGlass",
+            "IsoClothingDryer",
+            "IsoClothingWasher",
+            "IsoCombinationWasherDryer",
+            "IsoFireplace",
+            "IsoMannequin",
+            "IsoRadio",
+            "IsoJukebox",
+            "IsoStove",
+            "IsoTelevision",
+            "IsoMultiMedia"
+        ],
+        "type": {
+            "main": "string"
+        }
+    },
+    "IsClosedState": {
+        "field": "IS_CLOSED_STATE"
+    },
+    "isEave": {
+        "field": "IS_EAVE"
+    },
+    "IsFloorAttached": {
+        "field": "IS_FLOOR_ATTACHED"
+    },
+    "IsFridge": {
+        "field": "IS_FRIDGE"
+    },
+    "IsGridExtensionTile": {
+        "field": "IS_GRID_EXTENSION_TILE"
+    },
+    "IsHigh": {
+        "field": "IS_HIGH",
+        "description": "Indicates the tile is high, which means the tile only oocupies the upper half of the height, like a painting or wall shelf.",
+        "type": {
+            "main": "boolean"
+        }
+    },
+    "IsLow": {
+        "field": "IS_LOW",
+        "description": "Indicates the tile is low, which means the tile only oocupies the lower half of the height, like a bed or counter.",
+        "type": {
+            "main": "boolean"
+        }
+    },
+    "IsMirror": {
+        "field": "IS_MIRROR"
+    },
+    "IsMoveAble": {
+        "field": "IS_MOVE_ABLE",
+        "description": "Indicates the tile can be moved by the player. This will notably provide a [moveable item](https://pz-wiki-modding.github.io/PZ-API-Docs/scripts/item.html#item-itemtype). [MoveType](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#movetype) allows you to set the type of moveable the tile is.",
+        "type": {
+            "main": "boolean"
+        }
+    },
+    "isMoveAbleObject": {
+        "field": "IS_MOVE_ABLE_OBJECT"
+    },
+    "IsPaintable": {
+        "field": "IS_PAINTABLE"
+    },
+    "IsStackable": {
+        "field": "IS_STACKABLE"
+    },
+    "IsSurfaceOffset": {
+        "field": "IS_SURFACE_OFFSET",
+        "description": "Indicates the object is offset by the [Surface](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#surface) value when on a tabletop.",
+        "type": {
+            "main": "boolean"
+        }
+    },
+    "IsTable": {
+        "field": "IS_TABLE",
+        "description": "Will treat the tile as a table surface."
+    },
+    "IsTableTop": {
+        "field": "IS_TABLE_TOP",
+        "description": "Will allow you to place tiles on top of this tile."
+    },
+    "IsTrashCan": {
+        "field": "IS_TRASH_CAN"
+    },
+    "IsWaterCollector": {
+        "field": "IS_WATER_COLLECTOR"
+    },
+    "ItemHeight": {
+        "field": "ITEM_HEIGHT",
+        "type": {
+            "main": "integer"
+        },
+        "default": 0
+    },
+    "jukebox": {
+        "field": "JUKEBOX"
+    },
+    "lightswitch": {
+        "field": "LIGHTSWITCH"
+    },
+    "lightB": {
+        "field": "LIGHT_B"
+    },
+    "LightFilterB": {
+        "field": "LIGHT_FILTER_B"
+    },
+    "LightFilterG": {
+        "field": "LIGHT_FILTER_G"
+    },
+    "LightFilterIntensity": {
+        "field": "LIGHT_FILTER_INTENSITY"
+    },
+    "LightFilterMix": {
+        "field": "LIGHT_FILTER_MIX"
+    },
+    "LightFilterR": {
+        "field": "LIGHT_FILTER_R"
+    },
+    "lightG": {
+        "field": "LIGHT_G"
+    },
+    "lightR": {
+        "field": "LIGHT_R"
+    },
+    "LightRadius": {
+        "field": "LIGHT_RADIUS"
+    },
+    "LinkedLocIs": {
+        "field": "LINKED_LOC_IS"
+    },
+    "LinkedOffset": {
+        "field": "LINKED_OFFSET"
+    },
+    "livingRoom": {
+        "field": "LIVING_ROOM"
+    },
+    "makeWindowInvincible": {
+        "field": "MAKE_WINDOW_INVINCIBLE"
+    },
+    "Material": {
+        "field": "MATERIAL"
+    },
+    "Material2": {
+        "field": "MATERIAL_2"
+    },
+    "Material3": {
+        "field": "MATERIAL_3"
+    },
+    "MaterialType": {
+        "field": "MATERIAL_TYPE"
+    },
+    "Microwave": {
+        "field": "MICROWAVE"
+    },
+    "MinimumCarSpeedDmg": {
+        "field": "MINIMUM_CAR_SPEED_DMG"
+    },
+    "Movement": {
+        "field": "MOVEMENT"
+    },
+    "MoveType": {
+        "field": "MOVE_TYPE",
+        "description": "Sets the type of moveable the tile will be. This seems to be only related to the icon of item. There are also signs in the game code that when set to WallObject it will slightly impact the shape of the tile for physic interactions.",
+        "values": [
+            "Normal",
+            "WallObject",
+            "WindowObject",
+            "Window",
+            "FloorTile",
+            "FloorRug",
+            "Vegitation"
+        ],
+        "type": {
+            "main": "string"
+        }
+    },
+    "MoveWithWind": {
+        "field": "MOVE_WITH_WIND"
+    },
+    "name": {
+        "field": "NAME"
+    },
+    "natureFloor": {
+        "field": "NATURE_FLOOR"
+    },
+    "NeverCutaway": {
+        "field": "NEVER_CUTAWAY"
+    },
+    "NoFreezer": {
+        "field": "NO_FREEZER"
+    },
+    "noStart": {
+        "field": "NO_START"
+    },
+    "NoWallLighting": {
+        "field": "NO_WALL_LIGHTING"
+    },
+    "Noffset": {
+        "field": "N_OFFSET"
+    },
+    "OpaquePixelsOnly": {
+        "field": "OPAQUE_PIXELS_ONLY",
+        "type": {
+            "main": "boolean"
+        }
+    },
+    "open": {
+        "field": "OPEN"
+    },
+    "OpenTileOffset": {
+        "field": "OPEN_TILE_OFFSET"
+    },
+    "PaintingType": {
+        "field": "PAINTING_TYPE"
+    },
+    "PhysicsMesh": {
+        "field": "PHYSICS_MESH"
+    },
+    "PhysicsShape": {
+        "field": "PHYSICS_SHAPE"
+    },
+    "PickUpLevel": {
+        "field": "PICK_UP_LEVEL",
+        "#desc": "PickUpTool",
+        "type": {
+            "main": "integer"
+        },
+        "description": "[PickUpTool](https://pz-wiki-modding.github.io/PZ-API-Docs/scripts/item.html#item-pickuptool) will indicate what tool the player needs to use to pick up the tile, while [PlaceTool](https://pz-wiki-modding.github.io/PZ-API-Docs/scripts/item.html#item-placetool) will indicate what tool the player needs to use to place the tile.\n\nIf you want to add new tools, you can usually use the [ItemTags](https://pz-wiki-modding.github.io/PZ-API-Docs/java/item_tags.html) that you add to your [item tools](https://pz-wiki-modding.github.io/PZ-API-Docs/scripts/item.html#tags), or you can also look into the lua file `media/Moveables/ISMoveableDefinitions.lua` to see how they add each new tools.\n\nThe [PickUpLevel](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#pickuplevel) is used to determine what level in the relevant skill you need to be able to pickup the tile. For example `Hammer` with a PickUpLevel of 2 will require a carpentry level of 2 to pickup the tile.\n\nThe [PickUpWeight](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#pickupweight) will determine how much the tile weights in the inventory. This value is divded by 10, so for example a weight of 200 will mean an in-game encumbrance of 20. If [ForceSingleItem](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#forcesingleitem) is set to `true`, this is the total weight, otherwise this is the weight of each tile as a separate item.\n\n[CanBreak](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#canbreak) can be used to indicate that the tile has a chance to break when being picked up. The chance gets smaller based on the [PickUpLevel](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#pickuplevel)."
+    },
+    "PickUpTool": {
+        "field": "PICK_UP_TOOL",
+        "description": "[PickUpTool](https://pz-wiki-modding.github.io/PZ-API-Docs/scripts/item.html#item-pickuptool) will indicate what tool the player needs to use to pick up the tile, while [PlaceTool](https://pz-wiki-modding.github.io/PZ-API-Docs/scripts/item.html#item-placetool) will indicate what tool the player needs to use to place the tile.\n\nIf you want to add new tools, you can usually use the [ItemTags](https://pz-wiki-modding.github.io/PZ-API-Docs/java/item_tags.html) that you add to your [item tools](https://pz-wiki-modding.github.io/PZ-API-Docs/scripts/item.html#tags), or you can also look into the lua file `media/Moveables/ISMoveableDefinitions.lua` to see how they add each new tools.\n\nThe [PickUpLevel](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#pickuplevel) is used to determine what level in the relevant skill you need to be able to pickup the tile. For example `Hammer` with a PickUpLevel of 2 will require a carpentry level of 2 to pickup the tile.\n\nThe [PickUpWeight](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#pickupweight) will determine how much the tile weights in the inventory. This value is divded by 10, so for example a weight of 200 will mean an in-game encumbrance of 20. If [ForceSingleItem](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#forcesingleitem) is set to `true`, this is the total weight, otherwise this is the weight of each tile as a separate item.\n\n[CanBreak](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#canbreak) can be used to indicate that the tile has a chance to break when being picked up. The chance gets smaller based on the [PickUpLevel](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#pickuplevel).",
+        "values": [
+            "None",
+            "Hammer",
+            "Crowbar",
+            "Electrician",
+            "Cutter",
+            "Shovel",
+            "Wrench"
+        ],
+        "type": {
+            "main": "string"
+        }
+    },
+    "PickUpWeight": {
+        "field": "PICK_UP_WEIGHT",
+        "#desc": "PickUpTool",
+        "type": {
+            "main": "integer"
+        },
+        "description": "[PickUpTool](https://pz-wiki-modding.github.io/PZ-API-Docs/scripts/item.html#item-pickuptool) will indicate what tool the player needs to use to pick up the tile, while [PlaceTool](https://pz-wiki-modding.github.io/PZ-API-Docs/scripts/item.html#item-placetool) will indicate what tool the player needs to use to place the tile.\n\nIf you want to add new tools, you can usually use the [ItemTags](https://pz-wiki-modding.github.io/PZ-API-Docs/java/item_tags.html) that you add to your [item tools](https://pz-wiki-modding.github.io/PZ-API-Docs/scripts/item.html#tags), or you can also look into the lua file `media/Moveables/ISMoveableDefinitions.lua` to see how they add each new tools.\n\nThe [PickUpLevel](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#pickuplevel) is used to determine what level in the relevant skill you need to be able to pickup the tile. For example `Hammer` with a PickUpLevel of 2 will require a carpentry level of 2 to pickup the tile.\n\nThe [PickUpWeight](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#pickupweight) will determine how much the tile weights in the inventory. This value is divded by 10, so for example a weight of 200 will mean an in-game encumbrance of 20. If [ForceSingleItem](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#forcesingleitem) is set to `true`, this is the total weight, otherwise this is the weight of each tile as a separate item.\n\n[CanBreak](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#canbreak) can be used to indicate that the tile has a chance to break when being picked up. The chance gets smaller based on the [PickUpLevel](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#pickuplevel)."
+    },
+    "PlaceTool": {
+        "field": "PLACE_TOOL",
+        "#desc": "PickUpTool",
+        "type": {
+            "main": "string"
+        },
+        "description": "[PickUpTool](https://pz-wiki-modding.github.io/PZ-API-Docs/scripts/item.html#item-pickuptool) will indicate what tool the player needs to use to pick up the tile, while [PlaceTool](https://pz-wiki-modding.github.io/PZ-API-Docs/scripts/item.html#item-placetool) will indicate what tool the player needs to use to place the tile.\n\nIf you want to add new tools, you can usually use the [ItemTags](https://pz-wiki-modding.github.io/PZ-API-Docs/java/item_tags.html) that you add to your [item tools](https://pz-wiki-modding.github.io/PZ-API-Docs/scripts/item.html#tags), or you can also look into the lua file `media/Moveables/ISMoveableDefinitions.lua` to see how they add each new tools.\n\nThe [PickUpLevel](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#pickuplevel) is used to determine what level in the relevant skill you need to be able to pickup the tile. For example `Hammer` with a PickUpLevel of 2 will require a carpentry level of 2 to pickup the tile.\n\nThe [PickUpWeight](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#pickupweight) will determine how much the tile weights in the inventory. This value is divded by 10, so for example a weight of 200 will mean an in-game encumbrance of 20. If [ForceSingleItem](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#forcesingleitem) is set to `true`, this is the total weight, otherwise this is the weight of each tile as a separate item.\n\n[CanBreak](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#canbreak) can be used to indicate that the tile has a chance to break when being picked up. The chance gets smaller based on the [PickUpLevel](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#pickuplevel)."
+    },
+    "propaneTank": {
+        "field": "PROPANE_TANK"
+    },
+    "radio": {
+        "field": "RADIO"
+    },
+    "RenderLayer": {
+        "field": "RENDER_LAYER"
+    },
+    "RoofGroup": {
+        "field": "ROOF_GROUP"
+    },
+    "ScrapSize": {
+        "field": "SCRAP_SIZE"
+    },
+    "ScrapToolUseOverride": {
+        "field": "SCRAP_TOOL_USE_OVERRIDE"
+    },
+    "ScrapUseSkill": {
+        "field": "SCRAP_USE_SKILL"
+    },
+    "ScrapUseTool": {
+        "field": "SCRAP_USE_TOOL"
+    },
+    "SeatMaterial": {
+        "field": "SEAT_MATERIAL"
+    },
+    "signal": {
+        "field": "SIGNAL"
+    },
+    "SinkType": {
+        "field": "SINK_TYPE"
+    },
+    "SlopedSurfaceDirection": {
+        "field": "SLOPED_SURFACE_DIRECTION",
+        "type": {
+            "main": "string"
+        },
+        "values": [
+            "N",
+            "E",
+            "S",
+            "W",
+            "NE",
+            "NW",
+            "SE",
+            "SW"
+        ],
+        "default": null
+    },
+    "SlopedSurfaceHeightMax": {
+        "field": "SLOPED_SURFACE_HEIGHT_MAX",
+        "type": {
+            "main": "integer",
+            "min": 0,
+            "max": 100
+        },
+        "default": 0
+    },
+    "SlopedSurfaceHeightMin": {
+        "field": "SLOPED_SURFACE_HEIGHT_MIN",
+        "type": {
+            "main": "integer",
+            "min": 0,
+            "max": 100
+        },
+        "default": 0
+    },
+    "SmashedTileOffset": {
+        "field": "SMASHED_TILE_OFFSET"
+    },
+    "smoke": {
+        "field": "SMOKE"
+    },
+    "SnowTile": {
+        "field": "SNOW_TILE"
+    },
+    "solid": {
+        "field": "SOLID"
+    },
+    "solidfloor": {
+        "field": "SOLID_FLOOR"
+    },
+    "solidtrans": {
+        "field": "SOLID_TRANS"
+    },
+    "SpearOnlyAttackThrough": {
+        "field": "SPEAR_ONLY_ATTACK_THROUGH"
+    },
+    "SpriteGridLevel": {
+        "field": "SPRITE_GRID_LEVEL"
+    },
+    "SpriteGridPos": {
+        "field": "SPRITE_GRID_POS",
+        "description": "Used to specify the position the tile occupies when it is part of multi-tile objects. The first coordinates is in the direction X while the second is in the direction Y. The positive X direction is pointing towards the bottom right, while the positive Y direction is pointing towards the bottom left.\n\nYou can find an image which demonstrates the coordinates based on the positions [here](https://pzwiki.net/wiki/Tile_properties#Directions)."
+    },
+    "StackReplaceTileOffset": {
+        "field": "STACK_REPLACE_TILE_OFFSET",
+        "type": {
+            "main": "integer"
+        },
+        "default": 0
+    },
+    "stairsBN": {
+        "field": "STAIRS_BN"
+    },
+    "stairsBW": {
+        "field": "STAIRS_BW"
+    },
+    "stairsMN": {
+        "field": "STAIRS_MN"
+    },
+    "stairsMW": {
+        "field": "STAIRS_MW"
+    },
+    "stairsTN": {
+        "field": "STAIRS_TN"
+    },
+    "stairsTW": {
+        "field": "STAIRS_TW"
+    },
+    "StopCar": {
+        "field": "STOP_CAR"
+    },
+    "streetlight": {
+        "field": "STREETLIGHT"
+    },
+    "Surface": {
+        "field": "SURFACE",
+        "description": "The surface position of the tile when an object is on a tabletop surface like a counter or table. Requires [IsSurfaceOffset](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#issurfaceoffset) set to `true`.",
+        "type": {
+            "main": "integer"
+        },
+        "default": 0
+    },
+    "Soffset": {
+        "field": "S_OFFSET"
+    },
+    "tableN": {
+        "field": "TABLE_N"
+    },
+    "taintedWater": {
+        "field": "TAINTED_WATER"
+    },
+    "TallHoppableN": {
+        "field": "TALL_HOPPABLE_N"
+    },
+    "TallHoppableW": {
+        "field": "TALL_HOPPABLE_W"
+    },
+    "ThumpSound": {
+        "field": "THUMP_SOUND"
+    },
+    "TieSheetRope": {
+        "field": "TIE_SHEET_ROPE"
+    },
+    "TileOverlay": {
+        "field": "TILE_OVERLAY"
+    },
+    "trans": {
+        "field": "TRANS"
+    },
+    "Translucent": {
+        "field": "TRANSLUCENT"
+    },
+    "transparentFloor": {
+        "field": "TRANSPARENT_FLOOR"
+    },
+    "transparentN": {
+        "field": "TRANSPARENT_N"
+    },
+    "transparentW": {
+        "field": "TRANSPARENT_W"
+    },
+    "TreatAsWallOrder": {
+        "field": "TREAT_AS_WALL_ORDER"
+    },
+    "tree": {
+        "field": "TREE"
+    },
+    "TV": {
+        "field": "TV"
+    },
+    "UnbreakableWindowN": {
+        "field": "UNBREAKABLE_WINDOW_N"
+    },
+    "UnbreakableWindowNW": {
+        "field": "UNBREAKABLE_WINDOW_NW"
+    },
+    "UnbreakableWindowW": {
+        "field": "UNBREAKABLE_WINDOW_W"
+    },
+    "unflammable": {
+        "field": "UNFLAMMABLE"
+    },
+    "unlit": {
+        "field": "UNLIT"
+    },
+    "RoofWallStart": {
+        "field": "UNUSROOF_WALL_STARTD"
+    },
+    "UseObjectDepthTexture": {
+        "field": "USE_OBJECT_DEPTH_TEXTURE",
+        "description": "Makes the tile use the tile depth of the tile it overlays. For example an overlay adding items on a shelf will use the shelf tile depth.",
+        "type": {
+            "main": "boolean"
+        }
+    },
+    "vegitation": {
+        "field": "VEGITATION"
+    },
+    "wall": {
+        "field": "WALL"
+    },
+    "WallN": {
+        "field": "WALL_N"
+    },
+    "WallNW": {
+        "field": "WALL_NW"
+    },
+    "WallNWTrans": {
+        "field": "WALL_NW_TRANS"
+    },
+    "WallNTrans": {
+        "field": "WALL_N_TRANS"
+    },
+    "WallObjectAllowDoorframe": {
+        "field": "WALL_OBJECT_ALLOW_DOORFRAME"
+    },
+    "WallOverlay": {
+        "field": "WALL_OVERLAY"
+    },
+    "WallSE": {
+        "field": "WALL_SE"
+    },
+    "WallType": {
+        "field": "WALL_TYPE"
+    },
+    "WallW": {
+        "field": "WALL_W"
+    },
+    "WallWTrans": {
+        "field": "WALL_W_TRANS"
+    },
+    "water": {
+        "field": "WATER"
+    },
+    "waterAmount": {
+        "field": "WATER_AMOUNT"
+    },
+    "waterMaxAmount": {
+        "field": "WATER_MAX_AMOUNT"
+    },
+    "waterPiped": {
+        "field": "WATER_PIPED"
+    },
+    "WestRoofB": {
+        "field": "WEST_ROOF_B"
+    },
+    "WestRoofM": {
+        "field": "WEST_ROOF_M"
+    },
+    "WestRoofT": {
+        "field": "WEST_ROOF_T"
+    },
+    "WheelieBin": {
+        "field": "WHEELIE_BIN"
+    },
+    "windowFN": {
+        "field": "WINDOW_FN"
+    },
+    "windowFW": {
+        "field": "WINDOW_FW"
+    },
+    "WindowLocked": {
+        "field": "WINDOW_LOCKED"
+    },
+    "WindowN": {
+        "field": "WINDOW_N"
+    },
+    "WindowW": {
+        "field": "WINDOW_W"
+    },
+    "WindType": {
+        "field": "WIND_TYPE"
+    },
+    "Woffset": {
+        "field": "W_OFFSET"
+    }
+}
