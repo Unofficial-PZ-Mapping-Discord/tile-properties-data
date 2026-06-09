@@ -172,7 +172,7 @@ objects:
 
       When the tile can be placed on another tile surface but also has a surface itself, the [ItemHeight](https://pz-wiki-modding.github.io/PZ-API-Docs/mapping/tile_properties.html#itemheight) parameter can be used to indicate the height of the surface of the tile itself, and the Surface and IsSurfaceOffset parameters will then be used for the height of the bottom surface of the tile.
 
-      You can find a demonstration of these properties on the wiki [here](https://pzwiki.net/wiki/Tile_properties#Surface_and_ItemHeight)
+      The game will automatically offset the tiles when they are placed on top of each other based on the provided Surface and IsSurfaceOffset parameters. You can find a demonstration of these properties on the wiki [here](https://pzwiki.net/wiki/Tile_properties#Surface_and_ItemHeight).
     type:
       main: integer
     default: 0
