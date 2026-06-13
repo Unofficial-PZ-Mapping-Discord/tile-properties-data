@@ -67,12 +67,12 @@ objects:
       main: string
   "IsHigh":
     description: |-
-      Indicates the tile is high, which means the tile only oocupies the upper half of the height, like a painting or wall shelf.
+      Indicates the tile is high, which means the tile only occupies the upper half of the height, like a painting or wall shelf.
     type:
       main: boolean
   "IsLow":
     description: |-
-      Indicates the tile is low, which means the tile only oocupies the lower half of the height, like a bed or counter.
+      Indicates the tile is low, which means the tile only occupies the lower half of the height, like a bed or counter.
     type:
       main: boolean
   "IsSurfaceOffset":
